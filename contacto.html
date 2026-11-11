@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - El universo en colores</title>
+  <link rel="stylesheet" href="estilos.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #100d2b;
+      color: white;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #25164d;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      background-color: #8e44ad;
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #c084fc;
+      color: #160d2c;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    h2 {
+      color: #f5c7ff;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    h3 {
+      color: #8fe8ff;
+    }
+
+    .recuadro {
+      background-color: #211b48;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      border: 1px solid #594b91;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    label {
+      font-size: 17px;
+      font-weight: bold;
+      color: #f5c7ff;
+    }
+
+    input, select, textarea {
+      padding: 13px;
+      font-size: 16px;
+      border-radius: 9px;
+      border: 2px solid #8e44ad;
+      background-color: #f8f3ff;
+      color: #211b48;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .enviar {
+      background-color: #e056fd;
+      color: white;
+    }
+
+    .limpiar {
+      background-color: #8e44ad;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      background-color: #25164d;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+ 
+<body>
+<header>
+<marquee direction="right" style="font-size: 28px; font-weight: bold;">
+  Contacto
+</marquee>
+
+<marquee direction="right" style="font-size: 20px;">
+  Comparte tu curiosidad por el universo! 🌌
+</marquee> 
+  
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="contenido.html">🌠 Contenido</a>
+    <a href="informacion.html">🔭 Información</a>
+    <a href="contacto.html">✉️ Contacto</a>
+  </nav>
+</header>
+  
+<section class="imagen">
+    <img src="luiy.jpg"
+<main>
+
+  <section class="recuadro">
+    <h2>✨ Comparte tu opinión</h2>
+
+    <p>
+      ¡Bienvenido a nuestra sección de contacto! Nos gustaría
+      conocer tu opinión sobre el universo, las galaxias,
+      las nebulosas y los misterios del espacio.
+    </p>
+
+    <p>
+      Completa el siguiente formulario y cuéntanos qué tema
+      te interesa más. Tu opinión nos ayuda a conocer
+      tus intereses y curiosidades sobre el cosmos.
+    </p>
+  </section>
+
+  <section class="recuadro">
+    <h2>📝 Formulario de contacto</h2>
+<section class="imagen">
+    <img src="nait.jpg"
+    <form onsubmit="event.preventDefault(); alert('¡Gracias por compartir tu opinión sobre el universo! El formulario es una demostración y tus datos no se envían a ningún servidor.');">
+
+      <label for="nombre">👤 Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required
+      >
+
+      <label for="correo">📧 Correo electrónico:</label>
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="ejemplo@correo.com"
+        required
+      >
+
+      <label for="tema">🌌 Tema favorito:</label>
+      <select id="tema" name="tema" required>
+        <option value="">Selecciona un tema</option>
+        <option value="galaxias">Galaxias</option>
+        <option value="nebulosas">Nebulosas</option>
+        <option value="estrellas">Estrellas</option>
+        <option value="planetas">Planetas</option>
+        <option value="agujeros-negros">Agujeros negros</option>
+      </select>
+
+      <label for="mensaje">💭 Tu comentario:</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        placeholder="Escribe aquí tu opinión..."
+      ></textarea>
+
+      <button class="enviar" type="submit">
+        🚀 Enviar comentario
+      </button>
+
+      <button class="limpiar" type="reset">
+        🧹 Limpiar formulario
+      </button>
+
+    </form>
+  </section>
+
+  <section class="recuadro">
+    <h2>🌠 ¿Sabías que...?</h2>
+
+    <p>
+      El universo contiene miles de millones de galaxias
+      y cada una puede albergar enormes cantidades de estrellas.
+      Todavía hay mucho por descubrir, ¡y tu curiosidad
+      puede ser el comienzo de una gran aventura científica!
+    </p>
+  </section>
+<section class="imagen">
+    <img src="nao.jpg"
+</main>
+
+<footer>
+  <p>El universo en colores © 2026</p>
+  <p>Explorando las maravillas del cosmos ✨</p>
+</footer>
+
+</body>
+</html>
